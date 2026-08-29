@@ -1,0 +1,76 @@
+{
+  "_v": 2,
+  "createdAt": "2026-08-28T22:38:04.455Z",
+  "users": [
+    {
+      "id": "f12c4c09-9721-4f89-b3d8-b01b5882fec0",
+      "username": "zaki",
+      "salt": "3845c3a23f5981bbc38bb474",
+      "hash": "06af3e27f8ce028a0d8803d5eb43046a1bc03ae9c4d176a40f8b11ed3d257317",
+      "token": "7cf08d18b14d9fa6f048096f508f07500afa9224e32be42d",
+      "pushSub": null,
+      "trainee": {
+        "name": "زاكي",
+        "baseMax": {
+          "push": 70,
+          "pull": 20,
+          "dips": 25
+        },
+        "charactersOwned": [
+          "rookie"
+        ],
+        "equippedCharacter": "rookie",
+        "settings": {
+          "sound": true,
+          "vibration": true,
+          "legendary": true,
+          "shieldUsedDate": null
+        }
+      },
+      "stats": {
+        "xp": 91,
+        "points": 91,
+        "streak": 1,
+        "lastWorkoutDay": "2026-08-29",
+        "totalWorkouts": 1,
+        "totalPush": 0,
+        "totalPull": 0,
+        "totalDips": 0,
+        "totalSets": 9,
+        "qualitySets": 9,
+        "totalMinutes": 5,
+        "bestSessionPoints": 91,
+        "best": {
+          "push": 0,
+          "pull": 0,
+          "dips": 0
+        },
+        "mealLog": [],
+        "mealCount": 0,
+        "kcal": 0,
+        "mealStreak": 0,
+        "lastMealDay": null
+      },
+      "history": [
+        {
+          "date": "2026-08-29",
+          "at": "2026-08-29T15:16:20.442Z",
+          "sessionId": "sat-endr",
+          "sessionName": "التحمل القلبي",
+          "duration": 5,
+          "points": 91,
+          "quality": "ok",
+          "ratio": 17
+        }
+      ],
+      "records": [],
+      "achievements": [
+        {
+          "id": "first-workout",
+          "at": "2026-08-29T15:16:20.441Z"
+        }
+      ],
+      "name": "زاكي"
+    }
+  ]
+}

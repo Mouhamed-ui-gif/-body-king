@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: body-king
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: GEMINI_MODEL
+        value: gemini-3.6-flash
+      - key: VAPID_SUBJECT
+        value: mailto:bodyking@local
+      # القيم السرية تُضاف من لوحة Render (DashBoard → Environment):
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: VAPID_PUBLIC_KEY
+        sync: false
+      - key: VAPID_PRIVATE_KEY
+        sync: false

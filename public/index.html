@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+<meta name="theme-color" content="#0c0e14" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>سيد الجسد | BODY KING</title>
+<link rel="icon" type="image/png" href="/img/favicon.png" />
+<link rel="apple-touch-icon" href="/img/apple-icon.png" />
+<link rel="manifest" href="/manifest.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+<div id="app">
+  <canvas id="confetti"></canvas>
+
+  <!-- ===== Top bar ===== -->
+  <header id="topbar" class="topbar">
+    <div class="brand" data-nav="/home">
+      <div class="brand-mark">👑</div>
+      <div class="brand-text"><b>سيد الجسد</b><span>BODY KING</span></div>
+    </div>
+    <div class="top-pills">
+      <div class="pill pill-streak" title="سلسلة الأيام"><span class="pill-ico">🔥</span><b id="pill-streak">0</b></div>
+      <div class="pill pill-points" title="النقاط"><span class="pill-ico">⭐</span><b id="pill-points">0</b></div>
+    </div>
+  </header>
+
+  <!-- ===== Views ===== -->
+  <main id="view" class="view"></main>
+
+  <!-- ===== Bottom nav ===== -->
+  <nav id="nav" class="bottomnav">
+    <a data-nav="/home" class="nav-item" title="الرئيسية">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.8 12 3.5l9 7.3"/><path d="M5.2 9.6V20a1 1 0 0 0 1 1h11.6a1 1 0 0 0 1-1V9.6"/><path d="M9.5 21v-6.2h5V21"/></svg></span><b>الرئيسية</b>
+    </a>
+    <a data-nav="/program" class="nav-item" title="البرنامج">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.8 5v14M17.2 5v14M6.8 5V3.4M17.2 5V3.4M6.8 19v1.6M17.2 19v1.6M8.6 9.5h6.8M8.6 14.5h6.8"/></svg></span><b>البرنامج</b>
+    </a>
+    <a data-nav="/food" class="nav-item" title="الغذاء">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13.6" r="6.6"/><path d="M12 8l1.6 3.8M8.9 11.6h6.2M8.9 11.6v1.6M15.1 11.6v1.6"/></svg></span><b>الغذاء</b>
+    </a>
+    <a data-nav="/coach" class="nav-item nav-main" title="المدرب الذكي">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5l2 4.7 4.7 2-4.7 2-2 4.7-2-4.7-4.7-2 4.7-2z"/><path d="M18.8 14.5l.9 2.1 2.1.9-2.1.9-.9 2.1-.9-2.1-2.1-.9 2.1-.9z"/></svg></span><b>المدرب</b>
+    </a>
+    <a data-nav="/more" class="nav-item" title="المزيد">
+      <span class="nav-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.2" height="7.2" rx="1.6"/><rect x="13.3" y="3.5" width="7.2" height="7.2" rx="1.6"/><rect x="3.5" y="13.3" width="7.2" height="7.2" rx="1.6"/><rect x="13.3" y="13.3" width="7.2" height="7.2" rx="1.6"/></svg></span><b>المزيد</b>
+    </a>
+  </nav>
+
+  <!-- ===== Workout overlay ===== -->
+  <div id="workout" class="overlay hidden"></div>
+
+  <div id="toast" class="toast hidden"></div>
+</div>
+
+<script src="/js/utils.js"></script>
+<script src="/js/api.js"></script>
+<script src="/js/views.js"></script>
+<script src="/js/workout.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
